@@ -3,65 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lange-teile.com – FAQ</title>
+  <title>lange-teile.com | FAQ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="index.html">lange-teile.com</a>
-      <nav class="nav-links">
-        <a href="index.html">Startseite</a>
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">lange-teile.com</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Start</a>
         <a href="shop.html">Shop</a>
-        <a href="about.html">Über uns</a>
+        <a href="ueber-uns.html">Über uns</a>
         <a href="b2b.html">B2B</a>
         <a href="faq.html" class="active">FAQ</a>
         <a href="kontakt.html">Kontakt</a>
         <a href="rechtliches.html">Rechtliches</a>
       </nav>
-      <a class="cart-button" href="shop.html#warenkorb">Warenkorb <span id="cart-count">0</span></a>
+
+      <a href="shop.html" class="cart-button">Warenkorb <span data-cart-count>0</span></a>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">FAQ</p>
+  <main>
+    <section class="hero hero-small">
+      <div class="container">
+        <span class="badge">FAQ</span>
         <h1>Häufig gestellte Fragen</h1>
+        <p>
+          Ein paar Dinge, die Menschen wissen wollen, bevor sie sich für
+          hochwertige Aufstiegshilfe entscheiden.
+        </p>
       </div>
+    </section>
 
-      <div class="faq-list">
-        <article class="card">
+    <section class="section">
+      <div class="container card-grid two">
+        <div class="card">
           <h3>Verkauft ihr wirklich nur Leitern?</h3>
-          <p>Ja. Wir kennen unsere Stärken und bleiben bei dem, womit man sauber nach oben kommt.</p>
-        </article>
+          <p>Aktuell ja. Wir fokussieren uns auf das Wesentliche: gute Aufstiegslösungen mit erstaunlich viel Markenpersönlichkeit.</p>
+        </div>
 
-        <article class="card">
-          <h3>Sind die Texte absichtlich so formuliert?</h3>
-          <p>Ja. Wir nennen das Markenpersönlichkeit. Andere würden Augenzwinkern sagen.</p>
-        </article>
+        <div class="card">
+          <h3>Sind die Texte absichtlich zweideutig?</h3>
+          <p>Ja. Aber so, dass man immer noch seriös einkaufen kann, ohne beim Checkout rot zu werden.</p>
+        </div>
 
-        <article class="card">
-          <h3>Kann ich größere Mengen bestellen?</h3>
-          <p>Ja, dafür ist die B2B-Seite da. Clubs, Eventlocations und Betriebe sind ausdrücklich willkommen.</p>
-        </article>
+        <div class="card">
+          <h3>Kann ich als Firma größere Mengen bestellen?</h3>
+          <p>Ja. Dafür gibt es unseren B2B-Bereich mit Business-Anfragen für Clubs, Events, Lager und Unternehmen.</p>
+        </div>
 
-        <article class="card">
-          <h3>Ist das ein echter Shop?</h3>
-          <p>Aktuell ist es ein Demo-Shop für GitHub Pages. Die Struktur ist echt, Checkout und Zahlung sind Platzhalter.</p>
-        </article>
+        <div class="card">
+          <h3>Ist der Shop schon voll echt?</h3>
+          <p>Aktuell ist er als statische GitHub-Pages-Version aufgebaut. Optisch stark, technisch simpel und perfekt als Repo-Basis.</p>
+        </div>
 
-        <article class="card">
-          <h3>Warum eine Leiter statt improvisieren?</h3>
-          <p>Weil „halt mal kurz den Stuhl fest“ keine langfristig überzeugende Unternehmensstrategie ist.</p>
-        </article>
+        <div class="card">
+          <h3>Funktioniert der Warenkorb wirklich?</h3>
+          <p>Im Demo-Sinn ja. Er zählt Klicks, aber wickelt noch keine echte Zahlung oder Datenbank-Logik ab.</p>
+        </div>
+
+        <div class="card">
+          <h3>Kann daraus später ein echter Shop werden?</h3>
+          <p>Ja. Mit Backend, Zahlungsanbieter, echten Produkten und rechtlich finalen Texten kann man das sauber weiterbauen.</p>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Noch Fragen? Dann <a href="kontakt.html">schreib uns</a>.</p>
+    <div class="container footer-grid">
+      <div>
+        <h3>lange-teile.com</h3>
+        <p>Antworten auf die wichtigsten Höhenfragen.</p>
+      </div>
+      <div>
+        <h4>Seiten</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="b2b.html">B2B</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="rechtliches.html">Impressum</a></li>
+          <li><a href="rechtliches.html">Datenschutz</a></li>
+          <li><a href="rechtliches.html">AGB</a></li>
+          <li><a href="rechtliches.html">Widerruf</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
