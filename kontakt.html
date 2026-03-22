@@ -3,57 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lange-teile.com – Kontakt</title>
+  <title>lange-teile.com | Kontakt</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="index.html">lange-teile.com</a>
-      <nav class="nav-links">
-        <a href="index.html">Startseite</a>
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">lange-teile.com</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Start</a>
         <a href="shop.html">Shop</a>
-        <a href="about.html">Über uns</a>
+        <a href="ueber-uns.html">Über uns</a>
         <a href="b2b.html">B2B</a>
         <a href="faq.html">FAQ</a>
         <a href="kontakt.html" class="active">Kontakt</a>
         <a href="rechtliches.html">Rechtliches</a>
       </nav>
-      <a class="cart-button" href="shop.html#warenkorb">Warenkorb <span id="cart-count">0</span></a>
+
+      <a href="shop.html" class="cart-button">Warenkorb <span data-cart-count>0</span></a>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Kontakt</p>
-        <h1>Schreib uns</h1>
-        <p>Für Fragen, Business-Anfragen oder den spontanen Bedarf an etwas Längerem.</p>
+  <main>
+    <section class="hero hero-small">
+      <div class="container">
+        <span class="badge">Kontakt</span>
+        <h1>Schreib uns, bevor wieder jemand auf einen Stuhl steigt.</h1>
+        <p>
+          Für Fragen, Anfragen, größere Bestellungen oder einfach professionellen
+          Bedarf an etwas Längerem.
+        </p>
       </div>
+    </section>
 
-      <div class="content-grid">
-        <form class="card contact-form" id="contact-form">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="E-Mail" required />
-          <textarea placeholder="Deine Nachricht" required></textarea>
-          <button class="btn btn-primary" type="submit">Nachricht senden</button>
-          <p id="contact-message" class="success-message"></p>
-        </form>
+    <section class="section">
+      <div class="container card-grid two">
+        <div class="card">
+          <h2>Kontaktformular</h2>
+          <form data-demo-contact-form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Dein Name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input id="email" type="email" placeholder="name@mail.de" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nachricht</label>
+              <textarea id="message" placeholder="Worum geht’s?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          </form>
+        </div>
 
         <div class="card">
-          <h3>Kontaktinfos</h3>
-          <p><strong>E-Mail:</strong> hochstapeln@lange-teile.com</p>
-          <p><strong>Telefon:</strong> +49 40 00000000</p>
-          <p><strong>Adresse:</strong> Musterstraße 12, 20095 Hamburg</p>
-          <p><strong>Zeiten:</strong> Mo–Fr, 09:00–17:00 Uhr</p>
+          <h2>Direkter Kontakt</h2>
+          <p><strong>E-Mail:</strong><br />hochstapeln@lange-teile.com</p>
+          <p><strong>Telefon:</strong><br />+49 40 00000000</p>
+          <p><strong>Adresse:</strong><br />Musterstraße 12<br />20095 Hamburg</p>
+          <p><strong>Erreichbarkeit:</strong><br />Mo–Fr, 09:00–17:00 Uhr</p>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Wir melden uns, sobald wir wieder unten sind.</p>
+    <div class="container footer-grid">
+      <div>
+        <h3>lange-teile.com</h3>
+        <p>Kontakt mit Bodenhaftung und Höhenkompetenz.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="b2b.html">B2B</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="rechtliches.html">Impressum</a></li>
+          <li><a href="rechtliches.html">Datenschutz</a></li>
+          <li><a href="rechtliches.html">AGB</a></li>
+          <li><a href="rechtliches.html">Widerruf</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
