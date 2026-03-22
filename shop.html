@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lange-teile.com – Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">lange-teile.com</a>
+      <nav class="nav-links">
+        <a href="index.html">Startseite</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">Über uns</a>
+        <a href="b2b.html">B2B</a>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="rechtliches.html">Rechtliches</a>
+      </nav>
+      <a class="cart-button" href="#warenkorb">Warenkorb <span id="cart-count">0</span></a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Shop</p>
+        <h1>Unsere langen Teile</h1>
+        <p>Für Clubs, Backstage, Wohnzimmer, Festivals und alle Situationen, in denen man professionell nach oben will.</p>
+      </div>
+
+      <div class="shop-toolbar">
+        <input type="text" id="searchInput" placeholder="Suchen... z. B. Club, Bühne, Lager" />
+      </div>
+
+      <div class="product-grid" id="product-list"></div>
+
+      <section id="warenkorb" class="cart-section">
+        <div class="section-head">
+          <p class="eyebrow">Warenkorb</p>
+          <h2>Deine Auswahl</h2>
+        </div>
+
+        <div id="cart-items" class="cart-items"></div>
+
+        <div class="cart-summary">
+          <p>Zwischensumme: <strong id="cart-subtotal">0,00 €</strong></p>
+          <p>Versand: <strong id="cart-shipping">0,00 €</strong></p>
+          <p>Gesamt: <strong id="cart-total">0,00 €</strong></p>
+        </div>
+
+        <div class="checkout-box">
+          <h3>Demo-Checkout</h3>
+          <p class="small-muted">Kein echter Zahlungsanbieter eingebunden. Diese Version ist für GitHub Pages und Demo-Zwecke.</p>
+          <form id="checkout-form">
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="email" id="email" placeholder="E-Mail" required />
+            <textarea id="address" placeholder="Lieferadresse" required></textarea>
+            <textarea id="note" placeholder="Bestellnotiz (optional)"></textarea>
+            <button class="btn btn-primary" type="submit">Bestellung abschließen</button>
+          </form>
+          <p id="checkout-message" class="success-message"></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>lange-teile.com</h3>
+        <p>Das hier ist die Stelle, wo aus Bedarf Besitz wird.</p>
+      </div>
+      <div>
+        <h4>Direktlinks</h4>
+        <ul>
+          <li><a href="about.html">Über uns</a></li>
+          <li><a href="b2b.html">B2B</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hinweis</h4>
+        <p>Demo-Shop ohne echte Zahlungsabwicklung.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
