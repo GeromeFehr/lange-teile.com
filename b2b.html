@@ -3,68 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lange-teile.com – B2B</title>
+  <title>lange-teile.com | B2B</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="index.html">lange-teile.com</a>
-      <nav class="nav-links">
-        <a href="index.html">Startseite</a>
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">lange-teile.com</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Start</a>
         <a href="shop.html">Shop</a>
-        <a href="about.html">Über uns</a>
+        <a href="ueber-uns.html">Über uns</a>
         <a href="b2b.html" class="active">B2B</a>
         <a href="faq.html">FAQ</a>
         <a href="kontakt.html">Kontakt</a>
         <a href="rechtliches.html">Rechtliches</a>
       </nav>
-      <a class="cart-button" href="shop.html#warenkorb">Warenkorb <span id="cart-count">0</span></a>
+
+      <a href="shop.html" class="cart-button">Warenkorb <span data-cart-count>0</span></a>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">B2B / Großkunden</p>
-        <h1>Für Clubs, Eventlocations, Lager und Betriebe</h1>
+  <main>
+    <section class="hero hero-small">
+      <div class="container">
+        <span class="badge">B2B / Großkunden</span>
+        <h1>Für Clubs, Firmen und professionelle Höhenbedarfe.</h1>
         <p>
-          Wenn ihr regelmäßig etwas Höheres zu tun habt, reden wir nicht mehr über Einzelstücke,
-          sondern über eine vernünftige Lösung für euren Betrieb.
+          Du brauchst mehrere Leitern für Lager, Veranstaltungsflächen, Gastronomie
+          oder Backstage-Bereiche? Dann reden wir nicht über Einzelstücke,
+          sondern über saubere Lösungen.
         </p>
       </div>
+    </section>
 
-      <div class="content-grid">
-        <article class="card">
+    <section class="section">
+      <div class="container card-grid three">
+        <div class="card">
           <h3>Clubs & Bars</h3>
-          <p>Licht, Deko, Technik, Lager. Die Nacht ist lang, aber unsere Teile meistens länger.</p>
-        </article>
-
-        <article class="card">
+          <p>Leitern für Deko, Lager, Technikräume, Beleuchtung und spontane Situationen mit professionellem Anspruch.</p>
+        </div>
+        <div class="card">
           <h3>Events & Festivals</h3>
-          <p>Für Bühnen, Backstage, schnelle Umbauten und alles, was fünf Minuten vor Einlass noch „mal eben“ erledigt werden muss.</p>
-        </article>
-
-        <article class="card">
-          <h3>Lager & Gewerbe</h3>
-          <p>Wenn regelmäßig oben etwas liegt, sollte regelmäßig unten jemand mit einer vernünftigen Leiter stehen.</p>
-        </article>
+          <p>Robuste Modelle für Bühne, Licht, Aufbau und alles, was während einer Produktion nicht mit Glück gelöst werden sollte.</p>
+        </div>
+        <div class="card">
+          <h3>Gewerbe & Lager</h3>
+          <p>Für Arbeitsumgebungen, in denen regelmäßig oben ran muss – ordentlich, sicher und ohne kreative Möbelstapelung.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="card highlight-box">
-        <h3>Business-Anfrage</h3>
-        <p>
-          Für Mengenrabatte, feste Lieferabsprachen oder individuelle Sets schreibt uns über die Kontaktseite.
-          Wir kalkulieren sauber, liefern zuverlässig und reden nur ein kleines bisschen zweideutig.
-        </p>
-        <a class="btn btn-primary" href="kontakt.html">Business-Anfrage senden</a>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2>Was wir für Großkunden anbieten</h2>
+          <p>
+            Mengenrabatte, abgestimmte Produktauswahl, einfache Nachbestellung und
+            ein Setup, das deutlich professioneller wirkt als „wir haben da noch
+            irgendwo zwei alte Leitern im Keller“.
+          </p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.2rem;">
+            <a href="kontakt.html" class="btn btn-primary">Business-Anfrage senden</a>
+            <a href="shop.html" class="btn btn-secondary">Zum Sortiment</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Groß denken. Höher erreichen. Professionell lösen.</p>
+    <div class="container footer-grid">
+      <div>
+        <h3>lange-teile.com</h3>
+        <p>Groß denken, sicher steigen.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="rechtliches.html">Rechtliches</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Direktkontakt</h4>
+        <p>hochstapeln@lange-teile.com</p>
+        <p>Business-Anfragen willkommen</p>
+      </div>
     </div>
   </footer>
 
