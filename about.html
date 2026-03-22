@@ -3,67 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lange-teile.com – Über uns</title>
+  <title>lange-teile.com | Über uns</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="index.html">lange-teile.com</a>
-      <nav class="nav-links">
-        <a href="index.html">Startseite</a>
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">lange-teile.com</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Start</a>
         <a href="shop.html">Shop</a>
-        <a href="about.html" class="active">Über uns</a>
+        <a href="ueber-uns.html" class="active">Über uns</a>
         <a href="b2b.html">B2B</a>
         <a href="faq.html">FAQ</a>
         <a href="kontakt.html">Kontakt</a>
         <a href="rechtliches.html">Rechtliches</a>
       </nav>
-      <a class="cart-button" href="shop.html#warenkorb">Warenkorb <span id="cart-count">0</span></a>
+
+      <a href="shop.html" class="cart-button">Warenkorb <span data-cart-count>0</span></a>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Über uns</p>
-        <h1>Wir verkaufen Leitern. Endlich sagt’s mal jemand klar.</h1>
+  <main>
+    <section class="hero hero-small">
+      <div class="container">
+        <span class="badge">Über uns</span>
+        <h1>Seriöse Leitern, unseriös gute Präsentation.</h1>
         <p>
-          Bei <strong>lange-teile.com</strong> geht es um hochwertige Leitern für reale Einsätze:
-          Clubs, Bars, Events, Lager, WGs und alles dazwischen.
+          Wir glauben, dass gute Produkte klar, sauber und mit einem kleinen
+          Augenzwinkern verkauft werden dürfen. Auch wenn es am Ende „nur“ um
+          Leitern geht. Oder gerade dann.
         </p>
       </div>
+    </section>
 
-      <div class="content-grid">
-        <article class="card">
-          <h3>Unsere Mission</h3>
+    <section class="section">
+      <div class="container card-grid two">
+        <div class="card">
+          <h2>Unsere Mission</h2>
           <p>
-            Menschen sollen nicht mehr so tun müssen, als wäre ein Stuhl plus Hoffnung eine Lösung.
-            Wir liefern die seriöse Antwort auf ein sehr alltägliches Problem: oben ist etwas, man kommt nicht ran.
+            Gute Leitern sollten einfach auffindbar, ordentlich beschrieben und
+            direkt einsatzbereit sein. Für Clubs, Wohnungen, Events, Lager und
+            überall dort, wo Improvisation meist schlechter aussieht als eine
+            vernünftige Lösung.
           </p>
-        </article>
+        </div>
 
-        <article class="card">
-          <h3>Unsere Haltung</h3>
+        <div class="card">
+          <h2>Unser Stil</h2>
           <p>
-            Die Produkte nehmen wir ernst. Uns selbst nicht immer. Genau daraus entsteht ein Shop,
-            der professionell funktioniert und trotzdem nicht klingt wie eine Steuerbroschüre.
+            Wir nehmen Qualität ernst, uns selbst nicht immer. Deshalb bekommt
+            man bei uns belastbare Produkte mit Texten, die nicht klingen wie
+            eine staubige Baumarkt-Broschüre aus 2004.
           </p>
-        </article>
+        </div>
 
-        <article class="card">
-          <h3>Warum „lange-teile“?</h3>
+        <div class="card">
+          <h2>Was wir verkaufen</h2>
           <p>
-            Weil Markennamen mit Charakter hängen bleiben. Und weil wir wussten, dass niemand bei diesem Namen völlig emotionslos bleibt.
+            Leitern für Alltag, Nachtleben, Gewerbe und Veranstaltungen. Vom
+            kompakten Wohnungsretter bis zur langen Business-Lösung für Lager
+            und hohe Decken.
           </p>
-        </article>
+        </div>
+
+        <div class="card">
+          <h2>Warum lange-teile.com?</h2>
+          <p>
+            Weil manche Domains einfach zu ehrlich sind, um ignoriert zu werden.
+            Und weil man eine Marke nicht vergisst, wenn sie gleichzeitig sauber
+            aussieht und ein bisschen frech ist.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 lange-teile.com</p>
+    <div class="container footer-grid">
+      <div>
+        <h3>lange-teile.com</h3>
+        <p>Die vielleicht direkteste Produktkategorie im Netz.</p>
+      </div>
+      <div>
+        <h4>Seiten</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="b2b.html">B2B</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="rechtliches.html">Impressum</a></li>
+          <li><a href="rechtliches.html">Datenschutz</a></li>
+          <li><a href="rechtliches.html">AGB</a></li>
+          <li><a href="rechtliches.html">Widerruf</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
 
