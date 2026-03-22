@@ -3,90 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lange-teile.com – Startseite</title>
+  <title>lange-teile.com | Start</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="index.html">lange-teile.com</a>
-      <nav class="nav-links">
-        <a href="index.html" class="active">Startseite</a>
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">lange-teile.com</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="active">Start</a>
         <a href="shop.html">Shop</a>
-        <a href="about.html">Über uns</a>
+        <a href="ueber-uns.html">Über uns</a>
         <a href="b2b.html">B2B</a>
         <a href="faq.html">FAQ</a>
         <a href="kontakt.html">Kontakt</a>
         <a href="rechtliches.html">Rechtliches</a>
       </nav>
-      <a class="cart-button" href="shop.html#warenkorb">Warenkorb <span id="cart-count">0</span></a>
+
+      <a href="shop.html" class="cart-button">Warenkorb <span data-cart-count>0</span></a>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Leitern für Clubs, Events, Zuhause und spontane Höhenkrisen</p>
-          <h1>Wenn’s plötzlich höher werden muss.</h1>
-          <p class="hero-text">
-            Willkommen bei <strong>lange-teile.com</strong> – dem wahrscheinlich aufrichtigsten
-            Leiter-Shop im Internet. Für Clubs, Bars, Bühnen, WGs, Lager und alle Orte, an denen
-            jemand plötzlich sagt: „Hat irgendwer zufällig was Langes da?“
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="shop.html">Zum Shop</a>
-            <a class="btn btn-secondary" href="b2b.html">Für Clubs & Großkunden</a>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <h3>Beliebte Einsatzorte</h3>
-          <ul>
-            <li>Lichttechnik im Club nachjustieren</li>
-            <li>Obere Lagerfächer erreichen</li>
-            <li>Deko befestigen, ohne auf Barhocker zu vertrauen</li>
-            <li>In der WG endlich an das obere Fach kommen</li>
-          </ul>
-          <p class="small-muted">
-            Stabiler als spontane Improvisation. Und meistens auch eleganter.
-          </p>
+      <div class="container">
+        <span class="badge">Leitern für Clubs, Events, Zuhause und spontane Höhenkrisen</span>
+        <h1>Wenn’s plötzlich höher werden muss.</h1>
+        <p>
+          Willkommen bei <strong>lange-teile.com</strong> – dem wahrscheinlich
+          aufrichtigsten Leiter-Shop im Internet. Für Clubs, Bars, Bühnen, WGs,
+          Lager und alle Orte, an denen jemand plötzlich sagt:
+          „Hat irgendwer zufällig was Langes da?“
+        </p>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+          <a href="shop.html" class="btn btn-primary">Zum Shop</a>
+          <a href="b2b.html" class="btn btn-secondary">Für Clubs & Großkunden</a>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Warum wir?</p>
-          <h2>Seriöse Leitern, unseriös gute Texte.</h2>
+        <div class="section-title">
+          <span>Beliebte Einsatzorte</span>
+          <h2>Wo unsere langen Teile regelmäßig gebraucht werden</h2>
+          <p>
+            Von der WG bis zum Clubkeller: Manche Probleme löst man einfach
+            stilvoller mit einer ordentlichen Leiter.
+          </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="card">
-            <h3>Schneller Versand</h3>
-            <p>Damit aus „Wir bräuchten jetzt sofort eine Leiter“ wenigstens bald „Sie ist unterwegs“ wird.</p>
-          </article>
-          <article class="card">
-            <h3>Hohe Qualität</h3>
-            <p>Mehr Halt als manche Beziehungen, deutlich mehr Stabilität als die übliche Notlösung.</p>
-          </article>
-          <article class="card">
-            <h3>Für Nachtleben & Alltag</h3>
-            <p>Ob Club, Festival, Lager oder Wohnzimmer – manche Probleme brauchen einfach etwas Längeres.</p>
-          </article>
+        <div class="card-grid three">
+          <div class="card">
+            <h3>Clubs & Bars</h3>
+            <p>Lichttechnik nachjustieren, Deko befestigen und oben ans Lager kommen, ohne akrobatische Verträge abzuschließen.</p>
+          </div>
+          <div class="card">
+            <h3>Wohnung & WG</h3>
+            <p>Wenn das obere Fach wieder so tut, als gehöre es einer anderen sozialen Schicht an.</p>
+          </div>
+          <div class="card">
+            <h3>Events & Bühne</h3>
+            <p>Für Backstage, Traversentechnik, Dekobau und alle spontanen „Kannst du da mal eben ran?“-Momente.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark">
+    <section class="section">
       <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Bestseller</p>
+        <div class="section-title">
+          <span>Warum wir?</span>
+          <h2>Seriöse Leitern, unseriös gute Texte.</h2>
+        </div>
+
+        <div class="card-grid three">
+          <div class="card">
+            <h3>Schneller Versand</h3>
+            <p>Damit aus „Wir bräuchten jetzt sofort eine Leiter“ wenigstens bald „Sie ist unterwegs“ wird.</p>
+          </div>
+          <div class="card">
+            <h3>Hohe Qualität</h3>
+            <p>Mehr Halt als manche Beziehungen, deutlich mehr Stabilität als die übliche Notlösung.</p>
+          </div>
+          <div class="card">
+            <h3>Für Nachtleben & Alltag</h3>
+            <p>Ob Club, Festival, Lager oder Wohnzimmer – manche Probleme brauchen einfach etwas Längeres.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <span>Bestseller</span>
           <h2>Unsere beliebtesten langen Teile</h2>
         </div>
 
-        <div class="product-grid" id="featured-products"></div>
+        <div class="card-grid three">
+          <div class="card product-card">
+            <span class="product-badge">Bestseller</span>
+            <div class="product-icon">🪜</div>
+            <h3>Club-Klassiker 2,5 m</h3>
+            <p>Wenn die Nacht hoch hinaus will.</p>
+            <div class="product-meta">
+              <div>
+                <div class="price">59,90 €</div>
+                <div class="stock">Lager: 18 Stück</div>
+              </div>
+              <button class="btn btn-primary" data-add-to-cart>In den Warenkorb</button>
+            </div>
+          </div>
+
+          <div class="card product-card">
+            <span class="product-badge">Event-Profi</span>
+            <div class="product-icon">🪜</div>
+            <h3>Backstage Deluxe 3,2 m</h3>
+            <p>Steht stabil. Im Gegensatz zu manchen Gästen.</p>
+            <div class="product-meta">
+              <div>
+                <div class="price">89,90 €</div>
+                <div class="stock">Lager: 12 Stück</div>
+              </div>
+              <button class="btn btn-primary" data-add-to-cart>In den Warenkorb</button>
+            </div>
+          </div>
+
+          <div class="card product-card">
+            <span class="product-badge">Klein aber oho</span>
+            <div class="product-icon">🪜</div>
+            <h3>Wohnungsretter Mini 1,8 m</h3>
+            <p>Für Lampen, Schränke und spontane Erwachsenheit.</p>
+            <div class="product-meta">
+              <div>
+                <div class="price">39,90 €</div>
+                <div class="stock">Lager: 26 Stück</div>
+              </div>
+              <button class="btn btn-primary" data-add-to-cart>In den Warenkorb</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -97,22 +159,24 @@
         <h3>lange-teile.com</h3>
         <p>Leitern für hohe Ansprüche und noch höhere Regale.</p>
       </div>
+
       <div>
         <h4>Navigation</h4>
         <ul>
           <li><a href="shop.html">Shop</a></li>
-          <li><a href="about.html">Über uns</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </div>
+
       <div>
         <h4>Rechtliches</h4>
         <ul>
-          <li><a href="rechtliches.html#impressum">Impressum</a></li>
-          <li><a href="rechtliches.html#datenschutz">Datenschutz</a></li>
-          <li><a href="rechtliches.html#agb">AGB</a></li>
-          <li><a href="rechtliches.html#widerruf">Widerruf</a></li>
+          <li><a href="rechtliches.html">Impressum</a></li>
+          <li><a href="rechtliches.html">Datenschutz</a></li>
+          <li><a href="rechtliches.html">AGB</a></li>
+          <li><a href="rechtliches.html">Widerruf</a></li>
         </ul>
       </div>
     </div>
