@@ -9,7 +9,9 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="logo">lange-teile.com</a>
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><span class="logo-dot"></span>lange-teile.com</span>
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">☰</button>
 
       <nav class="main-nav" id="mainNav">
@@ -28,51 +30,69 @@
   </header>
 
   <main>
-    <section class="hero hero-small">
-      <div class="container">
-        <span class="badge">Karriere</span>
-        <h1>Komm beruflich höher.</h1>
-        <p>
-          Bei <strong>lange-teile.com</strong> suchen wir Menschen mit Haltung,
-          Humor und der Bereitschaft, gemeinsam aufzusteigen. Im besten Sinne natürlich.
-        </p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Careers at lange-teile.com</span>
+          <h1>
+            Mehr <span class="gold-text">Aufstiegschancen</span><br />
+            als in manchem<br />
+            Großkonzern.
+          </h1>
+          <p>
+            Wir bauen keine langweilige Marke. Wir bauen einen Kultstore mit Premium-Inszenierung,
+            smarter Selbstironie und echter Wiedererkennbarkeit. Dafür suchen wir Menschen,
+            die beruflich höher wollen — und das bitte mit Stil.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#jobs" class="btn btn-primary">Offene Stellen ansehen</a>
+            <a href="kontakt.html" class="btn btn-secondary">Initiativ bewerben</a>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="hero-stage-inner">
+            <span class="stage-label">Employer Brand</span>
+            <div class="stage-card">
+              <h3>Arbeiten mit Haltung</h3>
+              <p>
+                Premium Marke. Freche Stimme. Echte Verantwortung. Und erstaunlich viele Gelegenheiten,
+                intern wie extern stilvoll aufzusteigen.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="section-title">
-          <span>Warum wir?</span>
-          <h2>Mehr Aufstiegschancen als in manchem Konzern.</h2>
-          <p>
-            Wir verkaufen nicht nur Leitern, wir leben das Thema Aufstieg mit
-            unangenehm konsequenter Markenbindung. Hier darfst du hoch hinaus,
-            ohne dass es nach PowerPoint riecht.
-          </p>
-        </div>
-
         <div class="card-grid three">
           <div class="card">
-            <h3>Flache Hierarchien</h3>
-            <p>Ironisch, aber wahr. Inhaltlich steigen wir trotzdem gern auf.</p>
+            <h3>Marke mit Charakter</h3>
+            <p>Hier klingt nichts nach Standard-Karriereseite. Wir nehmen unsere Arbeit ernst, nur unseren Auftritt nicht langweilig.</p>
           </div>
           <div class="card">
-            <h3>Humor inklusive</h3>
-            <p>Bei uns darf ein Jobtitel seriös klingen und gleichzeitig verdächtig gut doppeldeutig sein.</p>
+            <h3>Verantwortung mit Freiraum</h3>
+            <p>Wer hier etwas bewegt, bleibt nicht unsichtbar. Und nein, „flache Hierarchien“ ist bei uns keine leere Pointe.</p>
           </div>
           <div class="card">
-            <h3>Echte Verantwortung</h3>
-            <p>Wer hier was bewegt, steht nicht nur rum. Außer beim Produkttest. Da besser schon.</p>
+            <h3>Arbeiten für etwas Auffälliges</h3>
+            <p>Du baust an einer Marke, die man nicht vergisst — und das ist beruflich meistens deutlich mehr wert als ein generischer Titel.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="jobs">
       <div class="container">
         <div class="section-title">
-          <span>Stellenangebote</span>
+          <span>Open Roles</span>
           <h2>Offene Positionen</h2>
+          <p>
+            Für Menschen mit Haltung, Geschmack und der Fähigkeit, bei guter Ironie professionell zu bleiben.
+          </p>
         </div>
 
         <div class="jobs-list">
@@ -85,15 +105,15 @@
               <div class="job-meta">Hamburg</div>
             </div>
             <p>
-              Du bringst unsere langen Teile an die richtigen Orte und erklärst
-              Kunden mit ernster Miene, warum Größe manchmal eben doch entscheidend ist.
+              Du bringst unsere langen Teile an die richtigen Orte und erklärst Kunden mit professioneller Ruhe,
+              warum Reichweite manchmal einfach das wichtigste Verkaufsargument ist.
             </p>
             <ul class="job-list">
               <li>Beratung von Clubs, Firmen und Gewerbekunden</li>
-              <li>Produktvorstellungen vor Ort</li>
-              <li>Aufbau langfristiger Kundenbeziehungen</li>
+              <li>Produktpräsentationen vor Ort</li>
+              <li>Aufbau langfristiger B2B-Beziehungen</li>
             </ul>
-            <p class="job-joke">Slogan intern: Wer bei uns rausgeht, kommt beruflich rein.</p>
+            <p class="job-joke">Interner Satz dazu: Wer bei uns rausgeht, kommt beruflich rein.</p>
             <a href="kontakt.html" class="btn btn-primary">Jetzt bewerben</a>
           </div>
 
@@ -106,15 +126,15 @@
               <div class="job-meta">Remote / Hamburg</div>
             </div>
             <p>
-              Du schreibst Produkttexte, Kampagnen und humorvolle Inhalte mit
-              genau dem Maß an Zweideutigkeit, das charmant bleibt und nicht abrutscht.
+              Du schreibst Produkttexte, Kampagnen und Markeninhalte mit genau der Tonalität,
+              die clever zweideutig ist, ohne billig zu wirken.
             </p>
             <ul class="job-list">
-              <li>Texte für Shop, Social Media und Kampagnen</li>
-              <li>Weiterentwicklung der Markenstimme</li>
-              <li>Kreative Produktkommunikation</li>
+              <li>Texte für Shop, Mailings und Kampagnen</li>
+              <li>Weiterentwicklung der Brand Voice</li>
+              <li>Konzeptarbeit für Premium-Kommunikation</li>
             </ul>
-            <p class="job-joke">Ja, wir suchen wirklich jemanden für lange Texte bei lange-teile.com.</p>
+            <p class="job-joke">Ja, wir suchen wirklich jemanden für lange Texte bei lange-teile.com. Und ja, das ist Absicht.</p>
             <a href="kontakt.html" class="btn btn-primary">Jetzt bewerben</a>
           </div>
 
@@ -127,13 +147,13 @@
               <div class="job-meta">Hamburg</div>
             </div>
             <p>
-              Du kümmerst dich um Shop-Performance, Conversion und darum, dass
-              unsere Kundschaft elegant vom Interesse bis zum Kauf hochkommt.
+              Du optimierst den Shop, analysierst Performance und sorgst dafür, dass unsere Kunden
+              elegant vom ersten Blick bis zum Kaufabschluss hochkommen.
             </p>
             <ul class="job-list">
-              <li>Optimierung des Online-Shops</li>
-              <li>Analyse von Nutzerverhalten</li>
-              <li>Steigerung von Umsatz und Wiederkäufen</li>
+              <li>Optimierung von Shop und Conversion</li>
+              <li>Datenanalyse und Funnel-Arbeit</li>
+              <li>Wachstum mit Stil statt blindem Aktionismus</li>
             </ul>
             <p class="job-joke">Bei uns geht es täglich um bessere Einstiege und starke Abgänge.</p>
             <a href="kontakt.html" class="btn btn-primary">Jetzt bewerben</a>
@@ -148,13 +168,13 @@
               <div class="job-meta">Hamburg Lager</div>
             </div>
             <p>
-              Du sorgst dafür, dass unsere Produkte sauber gelagert, verpackt und
-              verschickt werden. Also kurz gesagt: Du hältst den Laden stabil.
+              Du hältst den Laden stabil, koordinierst Warenfluss und sorgst dafür, dass unsere Produkte
+              so ordentlich rausgehen, wie sie im Shop aussehen.
             </p>
             <ul class="job-list">
-              <li>Wareneingang und Versand</li>
+              <li>Wareneingang, Lagerstruktur und Versand</li>
               <li>Bestandskontrolle</li>
-              <li>Organisation des Lagerbereichs</li>
+              <li>Saubere Organisation hinter der Marke</li>
             </ul>
             <p class="job-joke">Wer bei uns Ordnung schafft, bringt Struktur in richtig lange Beziehungen.</p>
             <a href="kontakt.html" class="btn btn-primary">Jetzt bewerben</a>
@@ -169,15 +189,15 @@
               <div class="job-meta">Hamburg / Hybrid</div>
             </div>
             <p>
-              Perfekt für Berufseinsteiger, die Lust auf Marke, Produktentwicklung
-              und eine Karriere mit überraschend vielen Aufstiegsmöglichkeiten haben.
+              Für Berufseinsteiger mit Lust auf Produkt, Marke und Positionierung — also für Menschen,
+              die nicht ewig unten anfangen wollen, obwohl sie natürlich erstmal unten anfangen.
             </p>
             <ul class="job-list">
               <li>Mitarbeit an Sortiment und Produktideen</li>
-              <li>Koordination mit Einkauf und Marketing</li>
-              <li>Analyse von Trends und Kundenfeedback</li>
+              <li>Abstimmung mit Einkauf und Marketing</li>
+              <li>Trend-, Feedback- und Marktanalyse</li>
             </ul>
-            <p class="job-joke">Der ideale Einstieg für alle, die von unten anfangen und trotzdem schnell höher wollen.</p>
+            <p class="job-joke">Der ideale Einstieg für alle, die schnell professionell höher wollen.</p>
             <a href="kontakt.html" class="btn btn-primary">Jetzt bewerben</a>
           </div>
 
@@ -190,13 +210,13 @@
               <div class="job-meta">Remote / Hamburg</div>
             </div>
             <p>
-              Du beantwortest Kundenfragen, hilfst bei Bestellungen und bleibst
-              selbst dann ruhig, wenn jemand nachts um halb eins dringend etwas Längeres braucht.
+              Du beantwortest Kundenfragen und bleibst selbst dann ruhig,
+              wenn jemand nachts dringend etwas Längeres braucht und das auch exakt so formuliert.
             </p>
             <ul class="job-list">
-              <li>Kundensupport per Mail</li>
-              <li>Bearbeitung einfacher Shop-Anfragen</li>
-              <li>Unterstützung des Teams im Tagesgeschäft</li>
+              <li>Mail-Support und einfache Shop-Anfragen</li>
+              <li>Hilfestellung bei Bestellungen</li>
+              <li>Entlastung des Teams im Tagesgeschäft</li>
             </ul>
             <p class="job-joke">Support bei uns heißt: Menschen auffangen, bevor sie wieder auf Barhocker vertrauen.</p>
             <a href="kontakt.html" class="btn btn-primary">Jetzt bewerben</a>
@@ -210,10 +230,11 @@
     <div class="container footer-grid">
       <div>
         <h3>lange-teile.com</h3>
-        <p>Karriere mit Aufstiegspotenzial. Wortwörtlich fast zu schön.</p>
+        <p>Karriere mit mehr Stil, mehr Charakter und verdächtig vielen Aufstiegsmöglichkeiten.</p>
       </div>
+
       <div>
-        <h4>Navigation</h4>
+        <h4>Weitere Seiten</h4>
         <ul>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="warenkorb.html">Warenkorb</a></li>
@@ -221,10 +242,11 @@
           <li><a href="rechtliches.html">Rechtliches</a></li>
         </ul>
       </div>
+
       <div>
         <h4>Bewerbung</h4>
         <p>jobs@lange-teile.com</p>
-        <p>Wir suchen Leute, die beruflich nicht unten bleiben wollen.</p>
+        <p>Wir suchen Leute, die nicht ewig unten bleiben wollen.</p>
       </div>
     </div>
   </footer>
