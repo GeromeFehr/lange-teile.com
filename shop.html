@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>lange-teile.com | Shop</title>
+  <title>lange-teile.com | Kollektion</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="index.html" class="logo">lange-teile.com</a>
+      <a href="index.html" class="logo">
+        <span class="logo-mark"><span class="logo-dot"></span>lange-teile.com</span>
+      </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">☰</button>
 
       <nav class="main-nav" id="mainNav">
@@ -30,12 +32,21 @@
   <main>
     <section class="hero hero-small">
       <div class="container">
-        <span class="badge">Sortiment</span>
-        <h1>Unsere langen Teile</h1>
+        <span class="badge">Premium Collection</span>
+        <h1>Kuratiert für stilvolle Höhenlagen.</h1>
         <p>
-          Leitern für spontane Heldentaten, geplante Einsätze und professionelles
-          Hochkommen ohne peinliche Barhocker-Lösungen.
+          Unsere aktuelle Kollektion vereint Funktion, Inszenierung und genau die Art von Souveränität,
+          die man braucht, wenn plötzlich irgendwo oben etwas sehr wichtig wird.
         </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="premium-banner">
+          <strong>Collection Note:</strong> Jede Leiter in diesem Sortiment wurde so beschrieben,
+          als wäre sie ein Fashion Piece mit realem Nutzwert. Weil genau das die Energie ist.
+        </div>
       </div>
     </section>
 
@@ -43,10 +54,22 @@
       <div class="container">
         <div class="card-grid three">
           <div class="card product-card">
-            <span class="product-badge">Bestseller</span>
-            <div class="product-icon">🪜</div>
-            <h3>Club-Klassiker 2,5 m</h3>
-            <p>Die elegante Leiter für Bars, Clubs und alles, was nachts plötzlich höher wird.</p>
+            <span class="product-badge">Signature Piece</span>
+            <div class="product-visual">🪜</div>
+            <div class="product-head">
+              <div>
+                <h3>Club-Klassiker 2,5 m</h3>
+                <div class="product-subtitle">Bars, Clubs, Backrooms, gute Entscheidungen</div>
+              </div>
+            </div>
+            <div class="product-specs">
+              <span class="spec-pill">Bestseller</span>
+              <span class="spec-pill">Nightlife</span>
+              <span class="spec-pill">2,5 m</span>
+            </div>
+            <p class="product-copy">
+              Die elegante Antwort auf jede Situation, in der jemand nachts noch souverän an Dinge herankommen muss.
+            </p>
             <div class="product-meta">
               <div>
                 <div class="price">59,90 €</div>
@@ -58,9 +81,21 @@
 
           <div class="card product-card">
             <span class="product-badge">Event-Profi</span>
-            <div class="product-icon">🪜</div>
-            <h3>Backstage Deluxe 3,2 m</h3>
-            <p>Ideal für Bühne, Lichttechnik und Kollegen mit „Ich bin gleich wieder unten“.</p>
+            <div class="product-visual">🪜</div>
+            <div class="product-head">
+              <div>
+                <h3>Backstage Deluxe 3,2 m</h3>
+                <div class="product-subtitle">Für Bühne, Licht und Produktionen mit Anspruch</div>
+              </div>
+            </div>
+            <div class="product-specs">
+              <span class="spec-pill">Backstage</span>
+              <span class="spec-pill">3,2 m</span>
+              <span class="spec-pill">Technik</span>
+            </div>
+            <p class="product-copy">
+              Steht stabil. Im Gegensatz zu manchen Gästen, manchen Setplänen und manchen Improvisationsideen.
+            </p>
             <div class="product-meta">
               <div>
                 <div class="price">89,90 €</div>
@@ -71,10 +106,22 @@
           </div>
 
           <div class="card product-card">
-            <span class="product-badge">Klein aber oho</span>
-            <div class="product-icon">🪜</div>
-            <h3>Wohnungsretter Mini 1,8 m</h3>
-            <p>Kompakt, leicht und perfekt für alle, die doch nicht 2,10 m groß sind.</p>
+            <span class="product-badge">Living Essential</span>
+            <div class="product-visual">🪜</div>
+            <div class="product-head">
+              <div>
+                <h3>Wohnungsretter Mini 1,8 m</h3>
+                <div class="product-subtitle">Minimal, clever, erschreckend relevant</div>
+              </div>
+            </div>
+            <div class="product-specs">
+              <span class="spec-pill">WG</span>
+              <span class="spec-pill">1,8 m</span>
+              <span class="spec-pill">Compact</span>
+            </div>
+            <p class="product-copy">
+              Für Lampen, Schränke und die plötzliche Erkenntnis, dass Erwachsensein oft nur Reichweite mit Stil bedeutet.
+            </p>
             <div class="product-meta">
               <div>
                 <div class="price">39,90 €</div>
@@ -85,10 +132,22 @@
           </div>
 
           <div class="card product-card">
-            <span class="product-badge">Premium</span>
-            <div class="product-icon">🪜</div>
-            <h3>VIP-Lounge Reach 4,1 m</h3>
-            <p>Wenn oben plötzlich sehr wichtig wird – rein handwerklich natürlich.</p>
+            <span class="product-badge">Premium Reach</span>
+            <div class="product-visual">🪜</div>
+            <div class="product-head">
+              <div>
+                <h3>VIP-Lounge Reach 4,1 m</h3>
+                <div class="product-subtitle">Wenn oben plötzlich sehr wichtig wird</div>
+              </div>
+            </div>
+            <div class="product-specs">
+              <span class="spec-pill">VIP</span>
+              <span class="spec-pill">4,1 m</span>
+              <span class="spec-pill">High Ceiling</span>
+            </div>
+            <p class="product-copy">
+              Die wahrscheinlich seriöseste Art, irgendwo hochzukommen, wo man aus unerklärlich guten Gründen hinmuss.
+            </p>
             <div class="product-meta">
               <div>
                 <div class="price">129,90 €</div>
@@ -99,10 +158,22 @@
           </div>
 
           <div class="card product-card">
-            <span class="product-badge">Outdoor</span>
-            <div class="product-icon">🪜</div>
-            <h3>Festival Flex 3,8 m</h3>
-            <p>Matschfest, stressfest und stabiler als der Schlafrhythmus nach drei Eventtagen.</p>
+            <span class="product-badge">Outdoor Hero</span>
+            <div class="product-visual">🪜</div>
+            <div class="product-head">
+              <div>
+                <h3>Festival Flex 3,8 m</h3>
+                <div class="product-subtitle">Matschfest, stressfest, Event-ready</div>
+              </div>
+            </div>
+            <div class="product-specs">
+              <span class="spec-pill">Festival</span>
+              <span class="spec-pill">3,8 m</span>
+              <span class="spec-pill">Outdoor</span>
+            </div>
+            <p class="product-copy">
+              Für die wenigen Dinge, die auf Festivals am Ende wirklich gerade stehen müssen.
+            </p>
             <div class="product-meta">
               <div>
                 <div class="price">99,90 €</div>
@@ -113,10 +184,22 @@
           </div>
 
           <div class="card product-card">
-            <span class="product-badge">Soforthilfe</span>
-            <div class="product-icon">🪜</div>
-            <h3>Afterparty Emergency 2,2 m</h3>
-            <p>Die schnelle Lösung für Kellerbars, Partyräume und plötzliche Einsätze.</p>
+            <span class="product-badge">Fast Relief</span>
+            <div class="product-visual">🪜</div>
+            <div class="product-head">
+              <div>
+                <h3>Afterparty Emergency 2,2 m</h3>
+                <div class="product-subtitle">Wenn es plötzlich leitermäßig dringend wird</div>
+              </div>
+            </div>
+            <div class="product-specs">
+              <span class="spec-pill">Quick Fix</span>
+              <span class="spec-pill">2,2 m</span>
+              <span class="spec-pill">Indoor</span>
+            </div>
+            <p class="product-copy">
+              Die schnelle Premium-Lösung für Kellerbars, Partyräume und Situationen, die man später freundlich umschreibt.
+            </p>
             <div class="product-meta">
               <div>
                 <div class="price">49,90 €</div>
@@ -134,19 +217,19 @@
     <div class="container footer-grid">
       <div>
         <h3>lange-teile.com</h3>
-        <p>Mehr Aufstiegschancen pro Quadratmeter.</p>
+        <p>Premium Aufstieg, kuratiert für spontane Notwendigkeit und maximal gute Optik.</p>
       </div>
       <div>
         <h4>Navigation</h4>
         <ul>
           <li><a href="index.html">Start</a></li>
-          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="warenkorb.html">Warenkorb</a></li>
+          <li><a href="b2b.html">B2B</a></li>
           <li><a href="karriere.html">Karriere</a></li>
-          <li><a href="faq.html">FAQ</a></li>
         </ul>
       </div>
       <div>
-        <h4>Kontakt</h4>
+        <h4>Support</h4>
         <p>hochstapeln@lange-teile.com</p>
         <p>+49 40 00000000</p>
       </div>
