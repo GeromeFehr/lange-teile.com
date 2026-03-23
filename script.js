@@ -22,9 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tab.classList.add("active");
 
         const activePanel = document.getElementById(target);
-        if (activePanel) {
-          activePanel.classList.add("active");
-        }
+        if (activePanel) activePanel.classList.add("active");
       });
     });
   }
